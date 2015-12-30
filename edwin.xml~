@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <properties>
+	<comment>Settings file for Driving Task</comment>
 	<entry key="scene">scene.xml</entry>
 	<entry key="scenario">scenario.xml</entry>
 	<entry key="interaction">interaction.xml</entry>

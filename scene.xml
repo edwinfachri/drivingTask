@@ -2,53 +2,27 @@
 <scene xmlns="http://opends.eu/drivingtask/scene"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
         xsi:schemaLocation="http://opends.eu/drivingtask/scene ../../Schema/scene.xsd">
-
-	<sounds></sounds>
-	<pictures></pictures>
+        
+    <sounds>
+    </sounds>
+		
 	<models>
-		<model id="driveCar" key="Models/Cars/drivingCars/citroenC4/Car.j3o">
-			<mass>800</mass>
-			<visible>true</visible>
-			<collisionShape>meshShape</collisionShape>
-			<scale>
-				<vector jtype="java_lang_Float" size="3">
-					<entry>1</entry>
-					<entry>1</entry>
-					<entry>1</entry>
-				</vector>
-			</scale>
-			<rotation quaternion="true">
-				<vector jtype="java_lang_Float" size="4">
-					<entry>-0.015870064</entry>
-					<entry>0.019761475</entry>
-					<entry>0.0006448222</entry>
-					<entry>0.99967855</entry>
-				</vector>
-			</rotation>
-			<translation>
-				<vector jtype="java_lang_Float" size="3">
-					<entry>-69.29116</entry>
-					<entry>0.0</entry>
-					<entry>32.32251</entry>
-				</vector>
-			</translation>
-		</model>
-		<model id="City" key="Scenes/Paris/city.j3o">
+		<model id="grassPlane" key="Scenes/grassPlane/Scene.j3o">
 			<mass>0</mass>
 			<visible>true</visible>
 			<collisionShape>meshShape</collisionShape>
 			<scale>
 				<vector jtype="java_lang_Float" size="3">
-					<entry>0.4</entry>
-					<entry>0.4</entry>
-					<entry>0.4</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+					<entry>1</entry>
 				</vector>
 			</scale>
 
 			<rotation quaternion="false">
 				<vector jtype="java_lang_Float" size="3">
 					<entry>0</entry>
-					<entry>90</entry>
+					<entry>0</entry>
 					<entry>0</entry>
 				</vector>
 			</rotation>
@@ -61,14 +35,75 @@
 				</vector>
 			</translation>
 		</model>
-		<model id="redBox" key="" ref="box">
+		<model id="driverCar" key="Models/Cars/drivingCars/AudiS6/Car.j3o">
+			<mass>800</mass>
+			<visible>true</visible>
+			<collisionShape>meshShape</collisionShape>
+	
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>1</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+				</vector>
+			</scale>
+	
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>132</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+	
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-620.4993</entry>
+					<entry>21</entry>
+					<entry>-749.1053</entry>
+				</vector>
+			</translation>
+	
+		</model>
+		
+		<model id="City" key="Scenes/Video5/video5.j3o">
+			<mass>0</mass>
+			<visible>true</visible>
+			<collisionShape>meshShape</collisionShape>
+			<scale>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0.3</entry>
+					<entry>0.3</entry>
+					<entry>0.3</entry>
+				</vector>
+			</scale>
+
+			<rotation quaternion="false">
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>0</entry>
+					<entry>0</entry>
+				</vector>
+			</rotation>
+
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0</entry>
+					<entry>50</entry>
+					<entry>0</entry>
+				</vector>
+			</translation>
+			
+		</model>
+
+		<model id="greenBox" key="" ref="box">
 			<mass>0</mass>
 
 			<material>
 				<color>
 					<vector jtype="java_lang_Float" size="4">
-						<entry>1</entry>
 						<entry>0</entry>
+						<entry>1</entry>
 						<entry>0</entry>
 						<entry>1</entry>
 					</vector>
@@ -95,16 +130,47 @@
 
 			<translation>
 				<vector jtype="java_lang_Float" size="3">
-					<entry>-71</entry>
-					<entry>-0.3</entry>
-					<entry>10</entry>
+					<entry>-590</entry> <!-- Z axis (+ atas) -->
+					<entry>22</entry> <!-- Y axis (+ jauh)-->
+					<entry>-720</entry> <!-- X axis (+ kanan) -->
 				</vector>
 			</translation>
 		</model>
-	</models>
-	<geometries></geometries>
-	<resetPoints></resetPoints>
-	<gravity></gravity>
-	<lights></lights>
-</scene>
 
+	</models>
+		
+	<geometries>
+		<box id="box">
+			<width>1</width>
+			<depth>1</depth>
+			<height>1</height>
+		</box>
+	</geometries>
+	
+    <gravity>9.81</gravity>
+    
+    <time>19:00:12</time>
+    
+    <date>2010-11-25</date>
+	
+	<lights>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>0.5</entry>
+					<entry>-0.5</entry>
+					<entry>0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+		</directionalLight>
+	</lights>
+	<skyTexture>Textures/Sky/Bright/hills.dds</skyTexture>
+</scene>

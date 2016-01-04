@@ -102,9 +102,34 @@
 			</translation>
 		</model>
 	</models>
-	<geometries></geometries>
+	<geometries>
+		<box id="box">
+			<width>1</width>
+			<depth>1</depth>
+			<height>0.1</height>
+		</box>
+	</geometries>
 	<resetPoints></resetPoints>
-	<gravity></gravity>
-	<lights></lights>
+	<gravity>9.81</gravity>	
+	<lights>
+		<directionalLight>
+			<direction>
+				<vector jtype="java_lang_float" size="3">
+					<entry>0.5</entry>
+					<entry>0.5</entry>
+					<entry>0.5</entry>
+				</vector>
+			</direction>
+			<color>
+				<vector jtype="java_lang_Float" size="4">
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+					<entry>0.7</entry>
+				</vector>
+			</color>
+			
+		</directionalLight>
+	</lights>
 </scene>
 

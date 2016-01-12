@@ -2,5 +2,28 @@
 <interaction xmlns="http://opends.eu/drivingtask/interaction"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
         xsi:schemaLocation="http://opends.eu/drivingtask/interaction ../../Schema/interaction.xsd">
-
+	<activities>
+		<activity id="startRecord">
+			<action id="startRecording" delay="0" repeat="4">
+				<parameter name="track" value="1" />
+			</action>
+		</activity>
+		<activity id="moveVehicle">
+			<action id="moveTraffic" delay="0" repeat="4">
+				<parameter name="trafficObjectID" value="car1" />
+				<parameter name="wayPointID" value="c1" />
+			</action>
+		</activity>
+	</activities>
+	<triggers>
+<!--
+		<trigger id="collisionWithRecordBox" priority="1">
+			<activities>
+				<activity ref="startRecord" />
+				<activity ref="moveVehicle" />
+			</activities>
+			<condition>collideWith:startRecordBox</condition>
+		</trigger>
+-->
+	</triggers>
 </interaction>

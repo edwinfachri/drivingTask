@@ -20,7 +20,8 @@
 			<viewPortTop>0.95</viewPortTop>
 			<verticalDistance>500</verticalDistance>
 			<carOffset>100</carOffset>
-		</topView>	
+		</topView>
+		<captureVideo>output.avi</captureVideo>	
 	</general>
 	
 	<HMI>

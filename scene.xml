@@ -7,34 +7,6 @@
     </sounds>
 		
 	<models>
-		<model id="grassPlane" key="Scenes/grassPlane/Scene.j3o">
-			<mass>0</mass>
-			<visible>true</visible>
-			<collisionShape>meshShape</collisionShape>
-			<scale>
-				<vector jtype="java_lang_Float" size="3">
-					<entry>1</entry>
-					<entry>1</entry>
-					<entry>1</entry>
-				</vector>
-			</scale>
-
-			<rotation quaternion="false">
-				<vector jtype="java_lang_Float" size="3">
-					<entry>0</entry>
-					<entry>0</entry>
-					<entry>0</entry>
-				</vector>
-			</rotation>
-
-			<translation>
-				<vector jtype="java_lang_Float" size="3">
-					<entry>0</entry>
-					<entry>0</entry>
-					<entry>0</entry>
-				</vector>
-			</translation>
-		</model>
 		<model id="driverCar" key="Models/Cars/drivingCars/AudiS6/Car.j3o">
 			<mass>800</mass>
 			<visible>true</visible>
@@ -51,30 +23,30 @@
 			<rotation quaternion="false">
 				<vector jtype="java_lang_Float" size="3">
 					<entry>0</entry>
-					<entry>132</entry>
+					<entry>90</entry>
 					<entry>0</entry>
 				</vector>
 			</rotation>
 	
 			<translation>
 				<vector jtype="java_lang_Float" size="3">
-					<entry>-620.4993</entry>
-					<entry>21</entry>
-					<entry>-749.1053</entry>
+					<entry>-172.47427</entry>
+					<entry>0</entry>
+					<entry>-51.814003</entry>
 				</vector>
 			</translation>
 	
 		</model>
 		
-		<model id="City" key="Scenes/Video5/video5.j3o">
+		<model id="Track" key="Scenes/idealtest2/idealtest2.j3o">
 			<mass>0</mass>
 			<visible>true</visible>
 			<collisionShape>meshShape</collisionShape>
 			<scale>
 				<vector jtype="java_lang_Float" size="3">
-					<entry>0.3</entry>
-					<entry>0.3</entry>
-					<entry>0.3</entry>
+					<entry>1</entry>
+					<entry>1</entry>
+					<entry>1</entry>
 				</vector>
 			</scale>
 
@@ -89,14 +61,13 @@
 			<translation>
 				<vector jtype="java_lang_Float" size="3">
 					<entry>0</entry>
-					<entry>50</entry>
+					<entry>0</entry>
 					<entry>0</entry>
 				</vector>
 			</translation>
 			
 		</model>
-
-		<model id="greenBox" key="" ref="box">
+		<model id="startRecordBox" key="" ref="box">
 			<mass>0</mass>
 
 			<material>
@@ -110,13 +81,13 @@
 				</color>
 			</material>
 			
-			<visible>true</visible>
+			<visible>false</visible>
 			<collisionShape>none</collisionShape>
 			<scale>
 				<vector jtype="java_lang_Float" size="3">
-					<entry>1</entry>
-					<entry>1</entry>
-					<entry>1</entry>
+					<entry>0.5</entry>
+					<entry>0.5</entry>
+					<entry>10</entry>
 				</vector>
 			</scale>
 			
@@ -130,13 +101,14 @@
 
 			<translation>
 				<vector jtype="java_lang_Float" size="3">
-					<entry>-590</entry> <!-- Z axis (+ atas) -->
-					<entry>22</entry> <!-- Y axis (+ jauh)-->
-					<entry>-720</entry> <!-- X axis (+ kanan) -->
+					<entry>-158</entry>
+					<entry>0</entry>
+					<entry>-54</entry>
 				</vector>
 			</translation>
 		</model>
-
+		
+		
 	</models>
 		
 	<geometries>
@@ -145,8 +117,580 @@
 			<depth>1</depth>
 			<height>1</height>
 		</box>
+		
+<!-- main points -->
+
+		<point id="a1">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-193.5</entry>
+					<entry>0</entry>
+					<entry>-191</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="a3">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-57.5</entry>
+					<entry>0</entry>
+					<entry>-195</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="a4">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-53.5</entry>
+					<entry>0</entry>
+					<entry>-195</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="a5">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>155.5</entry>
+					<entry>0</entry>
+					<entry>-195</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="a6">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>160</entry>
+					<entry>0</entry>
+					<entry>-195</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="a8">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>302.5</entry>
+					<entry>0</entry>
+					<entry>-191</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="b2">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-191</entry>
+					<entry>0</entry>
+					<entry>-188.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="b3">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-57.5</entry>
+					<entry>0</entry>
+					<entry>-191</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="b4">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-53.5</entry>
+					<entry>0</entry>
+					<entry>-191</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="b5">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>155.5</entry>
+					<entry>0</entry>
+					<entry>-191</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="b6">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>160</entry>
+					<entry>0</entry>
+					<entry>-191</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="b7">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>297.5</entry>
+					<entry>0</entry>
+					<entry>-188.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="c1">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-197</entry>
+					<entry>0</entry>
+					<entry>-55.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="c2">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-193</entry>
+					<entry>0</entry>
+					<entry>-55.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="c3">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-57.5</entry>
+					<entry>0</entry>
+					<entry>-55.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="c4">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-53.5</entry>
+					<entry>0</entry>
+					<entry>-55.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="c5">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>155.5</entry>
+					<entry>0</entry>
+					<entry>-55.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="c6">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>160</entry>
+					<entry>0</entry>
+					<entry>-55.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="c7">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>295</entry>
+					<entry>0</entry>
+					<entry>-55.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="c8">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>299</entry>
+					<entry>0</entry>
+					<entry>-55.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="d1">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-197</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="d2">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-193</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="d3">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-57.5</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="d4">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-53.5</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="d5">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>155.5</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="d6">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>160</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="d7">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>295</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="d8">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>299</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="e2">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-191</entry>
+					<entry>0</entry>
+					<entry>82</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="e3">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-57.5</entry>
+					<entry>0</entry>
+					<entry>84</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="e4">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-53.5</entry>
+					<entry>0</entry>
+					<entry>84</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="e5">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>155.5</entry>
+					<entry>0</entry>
+					<entry>84</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="e6">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>160</entry>
+					<entry>0</entry>
+					<entry>84</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="e7">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>297.5</entry>
+					<entry>0</entry>
+					<entry>82</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="f1">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-193.5</entry>
+					<entry>0</entry>
+					<entry>84.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="f3">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-57.5</entry>
+					<entry>0</entry>
+					<entry>88</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="f4">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-53.5</entry>
+					<entry>0</entry>
+					<entry>88</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="f5">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>155.5</entry>
+					<entry>0</entry>
+					<entry>88</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="f6">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>160</entry>
+					<entry>0</entry>
+					<entry>88</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="f8">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>302.5</entry>
+					<entry>0</entry>
+					<entry>84.5</entry>
+				</vector>
+			</translation>
+		</point>
+		
+<!-- side points -->		
+
+		<point id="bc3">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-57.5</entry>
+					<entry>0</entry>
+					<entry>-61.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="bc4">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-53.5</entry>
+					<entry>0</entry>
+					<entry>-61.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="de3">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-57.5</entry>
+					<entry>0</entry>
+					<entry>-45.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="de4">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-53.5</entry>
+					<entry>0</entry>
+					<entry>-45.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="bc5">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>155.5</entry>
+					<entry>0</entry>
+					<entry>-61.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="bc6">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>160</entry>
+					<entry>0</entry>
+					<entry>-61.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="de5">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>155.5</entry>
+					<entry>0</entry>
+					<entry>-45.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="de6">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>160</entry>
+					<entry>0</entry>
+					<entry>-45.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="bc7">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>295</entry>
+					<entry>0</entry>
+					<entry>-61.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="bc8">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>299</entry>
+					<entry>0</entry>
+					<entry>-61.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="de7">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>295</entry>
+					<entry>0</entry>
+					<entry>-45.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="de8">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>299</entry>
+					<entry>0</entry>
+					<entry>-45.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="c21">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-63.5</entry>
+					<entry>0</entry>
+					<entry>-55.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="d21">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-63.5</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="c41">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-47.5</entry>
+					<entry>0</entry>
+					<entry>-55.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="d41">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-47.5</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="c42">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>150</entry>
+					<entry>0</entry>
+					<entry>-55.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="d42">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>150</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="c61">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>170</entry>
+					<entry>0</entry>
+					<entry>-55.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="d61">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>170</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="c62">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>289</entry>
+					<entry>0</entry>
+					<entry>-55.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="d62">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>289</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
+		<point id="point1">
+			<translation>
+				<vector jtype="java_lang_Float" size="3">
+					<entry>-100</entry>
+					<entry>0</entry>
+					<entry>-51.5</entry>
+				</vector>
+			</translation>
+		</point>
 	</geometries>
-	
     <gravity>9.81</gravity>
     
     <time>19:00:12</time>

@@ -12,6 +12,12 @@
         </environment>
 
         <driver>
+        	<idealTracks>
+        		<idealTrack id="test1">
+        			<point ref="11" />
+        			<point ref="32" />
+        		</idealTrack>
+        	</idealTracks>
         	<car id="" ref="driverCar" profile="">
         		<tires profile="">
         			<type>winter</type>
@@ -53,5 +59,51 @@
         		</brake>
         	</car>
         </driver>
-        
+        <traffic>
+        	<vehicle id="car1">
+				<modelPath>Models/Cars/drivingCars/CitroenC4/Car.j3o</modelPath>
+				<mass>800</mass>
+				<acceleration>3.3</acceleration>
+				<decelerationBrake>8.7</decelerationBrake>
+				<decelerationFreeWheel>2.0</decelerationFreeWheel>
+				<engineOn>true</engineOn>
+				<maxDistanceFromPath>3.0</maxDistanceFromPath>
+				<curveTension>0.175</curveTension>
+				<pathIsCycle>false</pathIsCycle>
+				<pathIsVisible>true</pathIsVisible>
+				<startWayPoint>point1</startWayPoint>
+				<wayPoints>
+					<wayPoint ref="point1">
+						<speed>80</speed>
+					</wayPoint>
+					<wayPoint ref="d21">
+						<speed>50</speed>
+						<trafficLight>TrafficLight.00_12</trafficLight>
+					</wayPoint>
+					<wayPoint ref="de3">
+						<speed>80</speed>
+					</wayPoint>
+					<wayPoint ref="e3">
+						<speed>80</speed>
+					</wayPoint>
+				</wayPoints>
+			</vehicle>
+        </traffic>
+        <road>
+        	<intersection id="intersectionCenter00" mode="trigger">
+        		<phases>
+					<phase id="01" duration="9000" state="ggrr"/>
+					<phase id="02" duration="1000" state="rrggy"/>
+					<phase id="03" duration="10000" state="yrggy"/>
+				</phases>
+				<trafficLights>
+	        		<trafficLight id="TrafficLight.00_12" phasePosition="1" trigger="">
+	        			<initialState>red</initialState>
+	        			<direction>none</direction>
+	        			<requiresRed></requiresRed>
+	        			<positionData roadID="road04" crossingType="4" arrowType="9" lane="1"/>
+	        		</trafficLight>
+        		</trafficLights>
+        	</intersection>
+        </road>
 </scenario>
